@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Link Up</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- (Optional) Google Font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css">
+ 
+</head>
+<body>
+  <!-- Top Navigation -->
+  <header class="nav">
+    <div class="nav-left">
+      <a href="#" class="logo">
+        <div class="logo-icon"></div>
+        <div>
+          <div class="logo-text-main">
+            LINK<span class="logo-text-dot">UP</span>
+          </div>
+        </div>
+      </a>
+      <div class="search-box">
+        <div class="search-circle"></div>
+        <input class="search-input" type="text" placeholder="Search people, jobs, topics..." />
+      </div>
+    </div>
+
+    <div class="nav-links">
+      <a href="index.html" class="nav-link nav-link-active">Home</a>
+      <a href="networks.html" class="nav-link">Network</a>
+      <a href="jobs.html" class="nav-link ">JObs</a>
+      <a href="Messages.html" class="nav-link ">Messages</a>
+      <a href="notification.html" class="nav-link ">Notifications</a>
+    </div>
+
+    <div class="nav-profile">
+      <div class="nav-avatar">S</div>
+      <div class="nav-name">You · Basic</div>
+    </div>
+  </header>
+
+  <!-- Main Layout -->
+  <main class="layout">
+    <!-- Left Column -->
+    <section>
+      <div class="card profile-card">
+        <div class="profile-avatar">
+          <div class="profile-avatar-inner">SC</div>
+        </div>
+        <div class="profile-name">Satyam Chauhan</div>
+        <div class="profile-title">CS Student · Open to Internships</div>
+
+        <div class="profile-meta">
+          <div class="profile-meta-row">
+            <span class="profile-meta-label">Profile views</span>
+            <span class="profile-meta-value">48</span>
+          </div>
+          <div class="profile-meta-row">
+            <span class="profile-meta-label">Connections</span>
+            <span class="profile-meta-value">420+</span>
+          </div>
+        </div>
+
+        <button class="profile-link">
+          <span class="profile-link-dot"></span>
+          Share your LinkUp profile
+        </button>
+      </div>
+
+      <div class="card shortcuts-card">
+        <h3>Shortcuts</h3>
+        <div>
+          <div class="shortcut-pill">
+            <span class="shortcut-dot"></span>
+            My Network
+          </div>
+          <div class="shortcut-pill">
+            <span class="shortcut-dot"></span>
+            Saved Jobs
+          </div>
+          <div class="shortcut-pill">
+            <span class="shortcut-dot"></span>
+            My Posts
+          </div>
+          <div class="shortcut-pill">
+            <span class="shortcut-dot"></span>
+            Learn DSA
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Middle Column -->
+    <section>
+      <div class="card create-post">
+        <div class="create-row">
+          <div class="create-avatar">SC</div>
+          <input class="create-input" type="text" placeholder="Start a neon thought..." />
+        </div>
+        <div class="create-actions">
+          <div class="create-tag">📷 Photo</div>
+          <div class="create-tag">🎬 Video</div>
+          <div class="create-tag">🧠 Project</div>
+          <button class="create-btn">Post</button>
+        </div>
+      </div>
+
+      <div class="feed-heading">
+        <span class="feed-dot"></span>
+        <span>Happening in your tech circle</span>
+      </div>
+
+      <!-- Post 1 -->
+      <article class="card post-card">
+        <div class="post-header">
+          <div class="post-avatar">AL</div>
+          <div>
+            <div class="post-info-name">Ananya Singh</div>
+            <div class="post-info-role">SDE Intern · Java | React | DSA</div>
+            <div class="post-meta">2h · • LinkUp feed</div>
+          </div>
+        </div>
+        <div class="post-body">
+          Just finished solving <strong>50+ DSA problems</strong> this month 🔥  
+          Consistency really compounds — if you’re starting now, solve 1 problem today and
+          increase by just 1 more every week.  
+          <br /><br />
+          Who’s building their streak on <strong>Link Up</strong> with me?
+        </div>
+        <div class="post-tags">
+          <span class="post-tag">#DSA</span>
+          <span class="post-tag">#Java</span>
+          <span class="post-tag">#100DaysOfCode</span>
+        </div>
+        <div class="post-footer">
+          <div class="post-actions">
+            <div class="post-action">
+              <span class="post-action-dot"></span>
+              <span>Like</span>
+            </div>
+            <div class="post-action">
+              <span class="post-action-dot"></span>
+              <span>Comment</span>
+            </div>
+            <div class="post-action">
+              <span class="post-action-dot"></span>
+              <span>Share</span>
+            </div>
+          </div>
+          <div class="post-stats">
+            <span>214 likes</span>
+            <span>23 comments</span>
+          </div>
+        </div>
+      </article>
+
+      <!-- Post 2 -->
+      <article class="card post-card">
+        <div class="post-header">
+          <div class="post-avatar">LU</div>
+          <div>
+            <div class="post-info-name">Link Up Team</div>
+            <div class="post-info-role">Building the neon network</div>
+            <div class="post-meta">1d · • Announcement</div>
+          </div>
+        </div>
+        <div class="post-body">
+          Welcome to <strong>Link Up</strong> ⚡  
+          A clean, focused place to:
+          <br />• connect with developers  
+          <br />• share your progress  
+          <br />• discover opportunities
+          <br /><br />
+          This is just a frontend mock — but your ideas can turn it into a real product.
+        </div>
+        <div class="post-tags">
+          <span class="post-tag">#LinkUp</span>
+          <span class="post-tag">#Frontend</span>
+          <span class="post-tag">#NeonUI</span>
+        </div>
+        <div class="post-footer">
+          <div class="post-actions">
+            <div class="post-action">
+              <span class="post-action-dot"></span>
+              <span>Like</span>
+            </div>
+            <div class="post-action">
+              <span class="post-action-dot"></span>
+              <span>Comment</span>
+            </div>
+            <div class="post-action">
+              <span class="post-action-dot"></span>
+              <span>Share</span>
+            </div>
+          </div>
+          <div class="post-stats">
+            <span>1.2k likes</span>
+            <span>120 comments</span>
+          </div>
+        </div>
+      </article>
+    </section>
+
+    <!-- Right Column -->
+    <aside>
+      <div class="card suggest-card">
+        <h3>People you may link up with</h3>
+
+        <div class="suggest-item">
+          <div class="suggest-info">
+            <span class="suggest-name">Rohan Verma</span>
+            <span class="suggest-role">Backend · Node | MongoDB</span>
+          </div>
+          <button class="suggest-btn">+ Connect</button>
+        </div>
+
+        <div class="suggest-item">
+          <div class="suggest-info">
+            <span class="suggest-name">Priya Sharma</span>
+            <span class="suggest-role">Frontend · React | UI/UX</span>
+          </div>
+          <button class="suggest-btn">+ Connect</button>
+        </div>
+
+        <div class="suggest-item">
+          <div class="suggest-info">
+            <span class="suggest-name">TechSpace Group</span>
+            <span class="suggest-role">DSA · Web Dev · Open Source</span>
+          </div>
+          <button class="suggest-btn">View</button>
+        </div>
+      </div>
+
+      <div class="card">
+        <h3 style="font-size:13px; margin-bottom:8px;">Trending on Link Up</h3>
+        <div class="trending-list">
+          <div>
+            <div class="trend-tag">#internship2025</div>
+            <div class="trend-sub">2,341 people are talking</div>
+          </div>
+          <div>
+            <div class="trend-tag">#javascript</div>
+            <div class="trend-sub">1,108 new posts today</div>
+          </div>
+          <div>
+            <div class="trend-tag">#neonUI</div>
+            <div class="trend-sub">Designers love dark + glow</div>
+          </div>
+        </div>
+
+        <div class="footer">
+          © <span>Link Up</span> · Built as a frontend mock.  
+          Customize text, colors & cards to make it <span>fully yours</span>.
+        </div>
+      </div>
+    </aside>
+  </main>
+</body>
+</html>

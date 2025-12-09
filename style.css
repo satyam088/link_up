@@ -1,0 +1,612 @@
+/* ===== Simple, clean CSS for "Link Up" ===== */
+/* Paste this inside your <style> tag and remove the old CSS */
+
+:root {
+  --bg-main: #f3f4f6;
+  --bg-elevated: #ffffff;
+  --bg-elevated-soft: #f9fafb;
+  --border-subtle: #e5e7eb;
+  --text-main: #111827;
+  --text-muted: #6b7280;
+  --accent: #0a66c2;
+  --accent-soft: rgba(10, 102, 194, 0.08);
+  --accent-pink: #ec4899;    /* kept only for small details if needed */
+  --accent-green: #16a34a;
+  --shadow-soft: 0 8px 20px rgba(15, 23, 42, 0.08);
+  --radius-lg: 12px;
+  --radius-xl: 12px;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Poppins", system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+  background: var(--bg-main);
+  color: var(--text-main);
+  min-height: 100vh;
+}
+
+/* Basic links */
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* ===== Top Nav ===== */
+
+.nav {
+  position: sticky;
+  top: 0;
+  z-index: 20;
+  background: #ffffff;
+  border-bottom: 1px solid var(--border-subtle);
+  padding: 10px 5vw;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav-left {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.logo {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 6px 10px;
+  border-radius: 999px;
+}
+
+.logo-icon {
+  height: 26px;
+  width: 26px;
+  border-radius: 8px;
+  background: var(--accent);
+}
+
+.logo-text-main {
+  font-size: 18px;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.logo-text-dot {
+  color: var(--accent);
+}
+
+.search-box {
+  background: var(--bg-elevated-soft);
+  border-radius: 999px;
+  padding: 6px 12px;
+  border: 1px solid var(--border-subtle);
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  min-width: 220px;
+}
+
+.search-circle {
+  height: 12px;
+  width: 12px;
+  border-radius: 999px;
+  border: 2px solid var(--text-muted);
+  position: relative;
+}
+
+.search-circle::after {
+  content: "";
+  position: absolute;
+  right: -4px;
+  bottom: -2px;
+  width: 6px;
+  height: 2px;
+  border-radius: 999px;
+  background: var(--text-muted);
+  transform: rotate(40deg);
+}
+
+.search-input {
+  border: none;
+  outline: none;
+  background: transparent;
+  color: var(--text-main);
+  font-size: 13px;
+  width: 100%;
+}
+
+.search-input::placeholder {
+  color: var(--text-muted);
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  font-size: 13px;
+  color: var(--text-muted);
+}
+
+.nav-link {
+  position: relative;
+  padding: 6px 4px;
+  cursor: pointer;
+  transition: color 0.15s ease;
+}
+
+.nav-link-active,
+.nav-link:hover {
+  color: var(--accent);
+}
+
+.nav-link-active::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -4px;
+  margin: 0 auto;
+  width: 18px;
+  height: 2px;
+  border-radius: 999px;
+  background: var(--accent);
+}
+
+.nav-profile {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.nav-avatar {
+  height: 32px;
+  width: 32px;
+  border-radius: 999px;
+  background: var(--accent);
+  display: flex;
+  align-items: center;
+  justify-content :center;
+  font-size: 16px;
+  font-weight: 600;
+  color: #ffffff;
+}
+
+.nav-name {
+  font-size: 13px;
+  color: var(--text-main);
+}
+
+/* ===== Layout ===== */
+
+.layout {
+  display: grid;
+  grid-template-columns: minmax(0, 260px) minmax(0, 1.9fr) minmax(0, 280px);
+  gap: 18px;
+  padding: 18px 5vw 40px;
+  max-width: 1180px;
+  margin: 0 auto;
+}
+
+/* ===== Generic Card ===== */
+
+.card {
+  background-color: var(--bg-elevated);
+  border-radius: var(--radius-xl);
+  border: 1px solid var(--border-subtle);
+  box-shadow: var(--shadow-soft);
+  padding: 14px 16px;
+}
+
+.card + .card {
+  margin-top: 12px;
+}
+
+/* ===== Left Column: Profile + Shortcuts ===== */
+
+.profile-card {
+  text-align: center;
+  padding-top: 20px;
+}
+
+.profile-avatar {
+  margin: 0 auto 10px;
+  height: 70px;
+  width: 70px;
+  border-radius: 999px;
+  background: var(--accent-soft);
+  padding: 3px;
+}
+
+.profile-avatar-inner {
+  height: 100%;
+  width: 100%;
+  border-radius: inherit;
+  background: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 26px;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  color: var(--accent);
+}
+
+.profile-name {
+  font-size: 17px;
+  font-weight: 600;
+}
+
+.profile-title {
+  margin-top: 4px;
+  font-size: 12px;
+  color: var(--text-muted);
+}
+
+.profile-meta {
+  margin-top: 12px;
+  padding-top: 10px;
+  border-top: 1px solid var(--border-subtle);
+  font-size: 11px;
+  text-align: left;
+}
+
+.profile-meta-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 4px;
+}
+
+.profile-meta-label {
+  color: var(--text-muted);
+}
+
+.profile-meta-value {
+  color: var(--accent-green);
+  font-weight: 500;
+}
+
+.profile-link {
+  margin-top: 12px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  font-size: 12px;
+  padding: 6px 10px;
+  border-radius: 999px;
+  border: 1px solid var(--border-subtle);
+  background: var(--bg-elevated-soft);
+  cursor: pointer;
+}
+
+.profile-link-dot {
+  height: 6px;
+  width: 6px;
+  border-radius: 999px;
+  background: var(--accent);
+}
+
+/* Shortcuts */
+
+.shortcuts-card h3 {
+  font-size: 13px;
+  margin-bottom: 10px;
+}
+
+.shortcut-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 4px 10px;
+  font-size: 11px;
+  border-radius: 999px;
+  border: 1px solid var(--border-subtle);
+  margin: 0 6px 6px 0;
+  background: var(--bg-elevated-soft);
+  cursor: pointer;
+  transition: background 0.15s ease, border 0.15s ease;
+}
+
+.shortcut-pill:hover {
+  border-color: var(--accent);
+  background: #eef4ff;
+}
+
+.shortcut-dot {
+  height: 7px;
+  width: 7px;
+  border-radius: 999px;
+  background: var(--accent);
+}
+
+/* ===== Middle Column: Feed ===== */
+
+.create-post {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.create-row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.create-avatar {
+  height: 42px;
+  width: 42px;
+  border-radius: 999px;
+  background: var(--accent);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+  font-weight: 600;
+  color: #ffffff;
+}
+
+.create-input {
+  flex: 1;
+  border-radius: 999px;
+  border: 1px solid var(--border-subtle);
+  padding: 9px 12px;
+  font-size: 13px;
+  background: var(--bg-elevated-soft);
+  color: var(--text-main);
+  outline: none;
+}
+
+.create-input::placeholder {
+  color: var(--text-muted);
+}
+
+.create-actions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 10px;
+  font-size: 11px;
+}
+
+.create-tag {
+  padding: 6px 10px;
+  border-radius: 999px;
+  background: var(--bg-elevated-soft);
+  border: 1px solid var(--border-subtle);
+  cursor: pointer;
+}
+
+.create-btn {
+  margin-left: auto;
+  padding: 7px 14px;
+  border-radius: 999px;
+  border: none;
+  cursor: pointer;
+  font-size: 12px;
+  font-weight: 500;
+  background: var(--accent);
+  color: #ffffff;
+}
+
+.feed-heading {
+  margin: 16px 0 6px;
+  font-size: 13px;
+  color: var(--text-muted);
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.feed-dot {
+  height: 6px;
+  width: 6px;
+  border-radius: 999px;
+  background: var(--accent-green);
+}
+
+.post-card {
+  margin-top: 10px;
+  padding-top: 12px;
+}
+
+.post-header {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 8px;
+}
+
+.post-avatar {
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  background: var(--accent-soft);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--accent);
+}
+
+.post-info-name {
+  font-size: 13px;
+  font-weight: 500;
+}
+
+.post-info-role {
+  font-size: 11px;
+  color: var(--text-muted);
+}
+
+.post-meta {
+  font-size: 10px;
+  color: var(--text-muted);
+  margin-top: 2px;
+}
+
+.post-body {
+  font-size: 13px;
+  margin: 6px 0 10px;
+  line-height: 1.5;
+}
+
+.post-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-bottom: 8px;
+}
+
+.post-tag {
+  font-size: 11px;
+  padding: 3px 8px;
+  border-radius: 999px;
+  background: var(--accent-soft);
+  border: 1px solid var(--accent-soft);
+  color: var(--accent);
+}
+
+.post-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 11px;
+  color: var(--text-muted);
+  border-top: 1px solid var(--border-subtle);
+  padding-top: 8px;
+  margin-top: 4px;
+}
+
+.post-actions {
+  display: flex;
+  gap: 14px;
+}
+
+.post-action {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  cursor: pointer;
+}
+
+.post-action-dot {
+  height: 7px;
+  width: 7px;
+  border-radius: 999px;
+  background: #d1d5db;
+}
+
+.post-stats {
+  display: flex;
+  gap: 10px;
+}
+
+/* ===== Right Column: Suggestions / Trending ===== */
+
+.suggest-card h3 {
+  font-size: 13px;
+  margin-bottom: 10px;
+}
+
+.suggest-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 10px;
+  font-size: 12px;
+}
+
+.suggest-info {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.suggest-name {
+  font-weight: 500;
+}
+
+.suggest-role {
+  color: var(--text-muted);
+  font-size: 11px;
+}
+
+.suggest-btn {
+  padding: 5px 10px;
+  font-size: 11px;
+  border-radius: 999px;
+  border: 1px solid var(--accent);
+  background: #ffffff;
+  color: var(--accent);
+  cursor: pointer;
+}
+
+.trending-list {
+  font-size: 11px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  margin-top: 6px;
+}
+
+.trend-tag {
+  color: var(--accent);
+}
+
+.trend-sub {
+  color: var(--text-muted);
+  font-size: 10px;
+}
+
+.footer {
+  margin-top: 16px;
+  font-size: 10px;
+  color: var(--text-muted);
+  text-align: left;
+  line-height: 1.5;
+}
+
+.footer span {
+  color: var(--accent);
+}
+
+/* ===== Responsive ===== */
+
+@media (max-width: 1024px) {
+  .layout {
+    grid-template-columns: minmax(0, 1.8fr) minmax(0, 1.4fr);
+  }
+
+  .layout > :first-child {
+    display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .nav {
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+
+  .nav-links {
+    display: none;
+  }
+
+  .layout {
+    grid-template-columns: minmax(0, 1fr);
+    padding: 12px 4vw 24px;
+  }
+
+  .layout > :last-child {
+    display: none;
+  }
+}

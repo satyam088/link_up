@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>LinkUp – Jobs</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- Reuse the same CSS file -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Top Navigation -->
+  <header class="nav">
+    <div class="nav-left">
+      <a href="index.html" class="logo">
+        <div class="logo-icon"></div>
+        <div>
+          <div class="logo-text-main">
+            LINK<span class="logo-text-dot">UP</span>
+          </div>
+        </div>
+      </a>
+      <div class="search-box">
+        <div class="search-circle"></div>
+        <input class="search-input" type="text" placeholder="Search jobs, companies..." />
+      </div>
+    </div>
+
+    <div class="nav-links">
+      <a href="index.html" class="nav-link ">Home</a>
+      <a href="networks.html" class="nav-link">Network</a>
+      <a href="jobs.html" class="nav-link nav-link-active ">JObs</a>
+      <a href="Messages.html" class="nav-link ">Messages</a>
+      <a href="notification.html" class="nav-link ">Notifications</a>
+    </div>
+
+    <div class="nav-profile">
+      <div class="nav-avatar">S</div>
+      <div class="nav-name">You · Basic</div>
+    </div>
+  </header>
+
+  <!-- Main Layout -->
+  <main class="layout">
+    <!-- Left Column: Profile + Filters -->
+    <section>
+      <div class="card profile-card">
+        <div class="profile-avatar">
+          <div class="profile-avatar-inner">SC</div>
+        </div>
+        <div class="profile-name">Satyam Chauhan</div>
+        <div class="profile-title">CS Student · Looking for Internships</div>
+
+        <div class="profile-meta">
+          <div class="profile-meta-row">
+            <span class="profile-meta-label">Location</span>
+            <span class="profile-meta-value">India</span>
+          </div>
+          <div class="profile-meta-row">
+            <span class="profile-meta-label">Job alerts</span>
+            <span class="profile-meta-value">On</span>
+          </div>
+        </div>
+
+        <button class="profile-link">
+          <span class="profile-link-dot"></span>
+          Edit job preferences
+        </button>
+      </div>
+
+      <div class="card shortcuts-card">
+        <h3>Filters</h3>
+        <div>
+          <div class="shortcut-pill">
+            <span class="shortcut-dot"></span>
+            Internship
+          </div>
+          <div class="shortcut-pill">
+            <span class="shortcut-dot"></span>
+            Entry level
+          </div>
+          <div class="shortcut-pill">
+            <span class="shortcut-dot"></span>
+            On-site
+          </div>
+          <div class="shortcut-pill">
+            <span class="shortcut-dot"></span>
+            Remote
+          </div>
+          <div class="shortcut-pill">
+            <span class="shortcut-dot"></span>
+            Full-time
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Middle Column: Job Listings -->
+    <section>
+      <article class="card">
+        <div class="feed-heading" style="margin-top:0;">
+          <span class="feed-dot"></span>
+          <span>Recommended jobs for you</span>
+        </div>
+
+        <!-- Job 1 -->
+        <div class="post-card" style="margin-top:10px; padding-top:0; border-top:none;">
+          <div class="post-header">
+            <div class="post-avatar">JS</div>
+            <div>
+              <div class="post-info-name">Junior Java Developer</div>
+              <div class="post-info-role">CodeWave · Bengaluru, India</div>
+              <div class="post-meta">Posted 2 days ago · 34 applicants</div>
+            </div>
+          </div>
+          <div class="post-body">
+            Looking for a fresher with strong core Java, OOPs, and DSA basics.
+            Familiarity with Spring Boot is a plus.
+          </div>
+          <div class="post-tags">
+            <span class="post-tag">Java</span>
+            <span class="post-tag">Spring</span>
+            <span class="post-tag">Fresher</span>
+          </div>
+          <div class="post-footer">
+            <div class="post-actions">
+              <div class="post-action">
+                <span class="post-action-dot"></span>
+                <span>Apply</span>
+              </div>
+              <div class="post-action">
+                <span class="post-action-dot"></span>
+                <span>Save</span>
+              </div>
+            </div>
+            <div class="post-stats">
+              <span>Actively hiring</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Job 2 -->
+        <div class="post-card">
+          <div class="post-header">
+            <div class="post-avatar">FE</div>
+            <div>
+              <div class="post-info-name">Frontend Intern (React)</div>
+              <div class="post-info-role">PixelCraft · Remote</div>
+              <div class="post-meta">Posted 5 days ago · 67 applicants</div>
+            </div>
+          </div>
+          <div class="post-body">
+            Work with a small team to build dashboards and landing pages.
+            Good HTML, CSS and React skills are required.
+          </div>
+          <div class="post-tags">
+            <span class="post-tag">React</span>
+            <span class="post-tag">JavaScript</span>
+            <span class="post-tag">Internship</span>
+          </div>
+          <div class="post-footer">
+            <div class="post-actions">
+              <div class="post-action">
+                <span class="post-action-dot"></span>
+                <span>Apply</span>
+              </div>
+              <div class="post-action">
+                <span class="post-action-dot"></span>
+                <span>Save</span>
+              </div>
+            </div>
+            <div class="post-stats">
+              <span>Remote</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Job 3 -->
+        <div class="post-card">
+          <div class="post-header">
+            <div class="post-avatar">ND</div>
+            <div>
+              <div class="post-info-name">Node.js Backend Intern</div>
+              <div class="post-info-role">APISquad · Noida, India</div>
+              <div class="post-meta">Posted 1 week ago · 19 applicants</div>
+            </div>
+          </div>
+          <div class="post-body">
+            Build and maintain REST APIs using Node.js and MongoDB.
+            Great opportunity for students to learn real backend systems.
+          </div>
+          <div class="post-tags">
+            <span class="post-tag">Node.js</span>
+            <span class="post-tag">MongoDB</span>
+            <span class="post-tag">Backend</span>
+          </div>
+          <div class="post-footer">
+            <div class="post-actions">
+              <div class="post-action">
+                <span class="post-action-dot"></span>
+                <span>Apply</span>
+              </div>
+              <div class="post-action">
+                <span class="post-action-dot"></span>
+                <span>Save</span>
+              </div>
+            </div>
+            <div class="post-stats">
+              <span>Easy apply</span>
+            </div>
+          </div>
+        </div>
+      </article>
+    </section>
+
+    <!-- Right Column: Saved Jobs / Alerts -->
+    <aside>
+      <div class="card suggest-card">
+        <h3>Saved jobs</h3>
+
+        <div class="suggest-item" style="margin-top:10px;">
+          <div class="suggest-info">
+            <span class="suggest-name">Full Stack Intern</span>
+            <span class="suggest-role">DevNest · Pune</span>
+          </div>
+          <button class="suggest-btn">View</button>
+        </div>
+
+        <div class="suggest-item">
+          <div class="suggest-info">
+            <span class="suggest-name">Software Engineer I</span>
+            <span class="suggest-role">TechHive · Bengaluru</span>
+          </div>
+          <button class="suggest-btn">View</button>
+        </div>
+
+        <div style="font-size:12px; color:var(--accent); margin-top:8px; cursor:pointer;">
+          View all saved jobs
+        </div>
+      </div>
+
+      <div class="card" style="margin-top:12px;">
+        <h3 style="font-size:13px; margin-bottom:8px;">Job alerts</h3>
+        <div class="trending-list">
+          <div>
+            <div class="trend-tag">Java Intern · India</div>
+            <div class="trend-sub">New jobs every week</div>
+          </div>
+          <div>
+            <div class="trend-tag">Frontend Intern · Remote</div>
+            <div class="trend-sub">Actively hiring companies</div>
+          </div>
+          <div>
+            <div class="trend-tag">Full Stack · Fresher</div>
+            <div class="trend-sub">Matches your skills</div>
+          </div>
+        </div>
+      </div>
+    </aside>
+  </main>
+</body>
+</html>

@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>LinkUp – Messages</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- Reuse your main styles -->
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="message.css" >
+
+  <!-- Extra chat-specific styles -->
+
+</head>
+<body>
+  <!-- Top Navigation -->
+  <header class="nav">
+    <div class="nav-left">
+      <a href="index.html" class="logo">
+        <div class="logo-icon"></div>
+        <div>
+          <div class="logo-text-main">
+            LINK<span class="logo-text-dot">UP</span>
+          </div>
+        </div>
+      </a>
+      <div class="search-box">
+        <div class="search-circle"></div>
+        <input class="search-input" type="text" placeholder="Search messages..." />
+      </div>
+    </div>
+
+    <div class="nav-links">
+      <a href="index.html" class="nav-link ">Home</a>
+      <a href="networks.html" class="nav-link">Network</a>
+      <a href="jobs.html" class="nav-link ">JObs</a>
+      <a href="Messages.html" class="nav-link nav-link-active">Messages</a>
+      <a href="notification.html" class="nav-link ">Notifications</a>
+    </div>
+
+    <div class="nav-profile">
+      <div class="nav-avatar">S</div>
+      <div class="nav-name">You · Basic</div>
+    </div>
+  </header>
+
+  <!-- Main Layout (only center column really used, but we keep same structure) -->
+  <main class="layout">
+    <section class="card chat-layout" style="grid-column: 1 / -1;">
+      <div class="chat-body">
+        <!-- Left: Chat list -->
+        <div class="card chat-list">
+          <div class="chat-list-header">
+            <span><strong>Messaging</strong></span>
+            <span style="font-size:11px; color:var(--text-muted);">3 chats</span>
+          </div>
+          <input
+            type="text"
+            class="chat-search"
+            id="chatSearch"
+            placeholder="Search by name..."
+          />
+          <div class="chat-list-items" id="chatList"></div>
+        </div>
+
+        <!-- Middle: Chat window -->
+        <div class="card chat-window">
+          <div class="chat-window-header" id="chatHeader">
+            <div class="chat-window-user">
+              <div class="chat-window-avatar" id="chatUserAvatar">A</div>
+              <div>
+                <div id="chatUserName" style="font-weight:500;">Select a chat</div>
+                <div class="chat-window-role" id="chatUserRole">No conversation selected</div>
+              </div>
+            </div>
+            <div style="font-size:11px; color:var(--text-muted);">
+              Last seen · <span id="chatUserLastSeen">—</span>
+            </div>
+          </div>
+
+          <div class="chat-messages" id="chatMessages">
+            <p style="font-size:13px; color:var(--text-muted); text-align:center; margin-top:40px;">
+              Select a person from the left to see messages.
+            </p>
+          </div>
+
+          <form class="chat-input-bar" id="chatForm">
+            <input
+              type="text"
+              class="chat-input"
+              id="chatInput"
+              placeholder="Write a message..."
+              autocomplete="off"
+            />
+            <button type="submit" class="chat-send-btn">Send</button>
+          </form>
+        </div>
+
+        <!-- Right: Info / help -->
+        <aside class="card">
+          <h3 style="font-size:13px; margin-bottom:8px;">About LinkUp chat</h3>
+          <div class="chat-help">
+            This demo shows how your messaging page can look.
+            <br /><br />
+            Right now, messages are stored only in the browser (no real backend).
+            To make it real:
+            <ul style="padding-left:16px; margin-top:6px;">
+              <li>Use a database (MongoDB, PostgreSQL, etc.)</li>
+              <li>Add an API (Node.js / Express)</li>
+              <li>Optionally use WebSockets (Socket.io) for live chat</li>
+            </ul>
+          </div>
+        </aside>
+      </div>
+    </section>
+  </main>
+  <script src="message.js"></script>
+</body>
+</html>

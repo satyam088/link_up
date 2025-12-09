@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>LinkUp – Network</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- Reuse the same CSS you already have -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Top Navigation -->
+  <header class="nav">
+    <div class="nav-left">
+      <a href="index.html" class="logo">
+        <div class="logo-icon"></div>
+        <div>
+          <div class="logo-text-main">
+            LINK<span class="logo-text-dot">UP</span>
+          </div>
+        </div>
+      </a>
+      <div class="search-box">
+        <div class="search-circle"></div>
+        <input class="search-input" type="text" placeholder="Search people, jobs, topics..." />
+      </div>
+    </div>
+
+    <div class="nav-links">
+      <a href="index.html" class="nav-link ">Home</a>
+      <a href="networks.html" class="nav-link nav-link-active">Network</a>
+      <a href="jobs.html" class="nav-link ">JObs</a>
+      <a href="Messages.html" class="nav-link ">Messages</a>
+      <a href="notification.html" class="nav-link ">Notifications</a>
+    </div>
+
+    <div class="nav-profile">
+      <div class="nav-avatar">S</div>
+      <div class="nav-name">You · Basic</div>
+    </div>
+  </header>
+
+  <!-- Main Layout -->
+  <main class="layout">
+    <!-- Left Column -->
+    <section>
+      <div class="card profile-card">
+        <div class="profile-avatar">
+          <div class="profile-avatar-inner">SC</div>
+        </div>
+        <div class="profile-name">Satyam Chauhan</div>
+        <div class="profile-title">CS Student · Open to Connect</div>
+
+        <div class="profile-meta">
+          <div class="profile-meta-row">
+            <span class="profile-meta-label">Connections</span>
+            <span class="profile-meta-value">420</span>
+          </div>
+          <div class="profile-meta-row">
+            <span class="profile-meta-label">Following</span>
+            <span class="profile-meta-value">180</span>
+          </div>
+        </div>
+
+        <button class="profile-link">
+          <span class="profile-link-dot"></span>
+          View all connections
+        </button>
+      </div>
+
+      <div class="card shortcuts-card">
+        <h3>Manage network</h3>
+        <div>
+          <div class="shortcut-pill">
+            <span class="shortcut-dot"></span>
+            Connections
+          </div>
+          <div class="shortcut-pill">
+            <span class="shortcut-dot"></span>
+            Contacts
+          </div>
+          <div class="shortcut-pill">
+            <span class="shortcut-dot"></span>
+            Following & Followers
+          </div>
+          <div class="shortcut-pill">
+            <span class="shortcut-dot"></span>
+            Groups
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Middle Column: Invitations & Suggestions -->
+    <section>
+      <!-- Invitations -->
+      <article class="card">
+        <div class="feed-heading" style="margin-top:0;">
+          <span class="feed-dot"></span>
+          <span>Invitations</span>
+        </div>
+
+        <div class="suggest-item" style="margin-top:12px;">
+          <div class="suggest-info">
+            <span class="suggest-name">Rahul Mehta</span>
+            <span class="suggest-role">Backend Developer · Node.js</span>
+          </div>
+          <div style="display:flex; gap:6px;">
+            <button class="suggest-btn">Accept</button>
+            <button class="suggest-btn" style="border-color:#e5e7eb; color:#6b7280;">Ignore</button>
+          </div>
+        </div>
+
+        <div class="suggest-item">
+          <div class="suggest-info">
+            <span class="suggest-name">Sneha Gupta</span>
+            <span class="suggest-role">Frontend · React</span>
+          </div>
+          <div style="display:flex; gap:6px;">
+            <button class="suggest-btn">Accept</button>
+            <button class="suggest-btn" style="border-color:#e5e7eb; color:#6b7280;">Ignore</button>
+          </div>
+        </div>
+
+        <div style="font-size:12px; color:var(--accent); margin-top:8px; cursor:pointer;">
+          See all invitations
+        </div>
+      </article>
+
+      <!-- People you may know -->
+      <article class="card" style="margin-top:12px;">
+        <div class="feed-heading" style="margin-top:0;">
+          <span class="feed-dot"></span>
+          <span>People you may know</span>
+        </div>
+
+        <div class="suggest-item" style="margin-top:12px;">
+          <div class="suggest-info">
+            <span class="suggest-name">Priya Sharma</span>
+            <span class="suggest-role">Full Stack · MERN</span>
+          </div>
+          <button class="suggest-btn">Connect</button>
+        </div>
+
+        <div class="suggest-item">
+          <div class="suggest-info">
+            <span class="suggest-name">Rohan Verma</span>
+            <span class="suggest-role">Java · Spring Boot</span>
+          </div>
+          <button class="suggest-btn">Connect</button>
+        </div>
+
+        <div class="suggest-item">
+          <div class="suggest-info">
+            <span class="suggest-name">Open Source Hub</span>
+            <span class="suggest-role">Community · GitHub & OSS</span>
+          </div>
+          <button class="suggest-btn">Follow</button>
+        </div>
+
+        <div style="font-size:12px; color:var(--accent); margin-top:8px; cursor:pointer;">
+          Show more suggestions
+        </div>
+      </article>
+    </section>
+
+    <!-- Right Column: Groups / Hashtags -->
+    <aside>
+      <div class="card suggest-card">
+        <h3>Groups you might like</h3>
+
+        <div class="suggest-item" style="margin-top:10px;">
+          <div class="suggest-info">
+            <span class="suggest-name">DSA Practice Club</span>
+            <span class="suggest-role">Daily problems · LeetCode</span>
+          </div>
+          <button class="suggest-btn">Join</button>
+        </div>
+
+        <div class="suggest-item">
+          <div class="suggest-info">
+            <span class="suggest-name">Web Dev India</span>
+            <span class="suggest-role">Frontend · Backend · DevOps</span>
+          </div>
+          <button class="suggest-btn">Join</button>
+        </div>
+      </div>
+
+      <div class="card" style="margin-top:12px;">
+        <h3 style="font-size:13px; margin-bottom:8px;">Hashtags to follow</h3>
+        <div class="trending-list">
+          <div>
+            <div class="trend-tag">#javascript</div>
+            <div class="trend-sub">Popular in your network</div>
+          </div>
+          <div>
+            <div class="trend-tag">#dsa</div>
+            <div class="trend-sub">Keep your streak running</div>
+          </div>
+          <div>
+            <div class="trend-tag">#webdevelopment</div>
+            <div class="trend-sub">Frontend · Backend · Fullstack</div>
+          </div>
+        </div>
+      </div>
+    </aside>
+  </main>
+</body>
+</html>

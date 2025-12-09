@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>LinkUp – Notifications</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- Reuse your main stylesheet -->
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="networks.css">
+
+  <!-- Extra styles only for notifications page -->
+  
+</head>
+<body>
+  <!-- Top Navigation -->
+  <header class="nav">
+    <div class="nav-left">
+      <a href="index.html" class="logo">
+        <div class="logo-icon"></div>
+        <div>
+          <div class="logo-text-main">
+            LINK<span class="logo-text-dot">UP</span>
+          </div>
+        </div>
+      </a>
+      <div class="search-box">
+        <div class="search-circle"></div>
+        <input class="search-input" type="text" placeholder="Search notifications..." />
+      </div>
+    </div>
+
+    <div class="nav-links">
+      <a href="index.html" class="nav-link ">Home</a>
+      <a href="networks.html" class="nav-link">Network</a>
+      <a href="jobs.html" class="nav-link ">JObs</a>
+      <a href="Messages.html" class="nav-link ">Messages</a>
+      <a href="notification.html" class="nav-link nav-link-active">Notifications</a>
+    </div>
+
+    <div class="nav-profile">
+      <div class="nav-avatar">S</div>
+      <div class="nav-name">You · Basic</div>
+    </div>
+  </header>
+
+  <!-- Main Layout -->
+  <main class="layout">
+    <!-- Left Column: Profile / quick stats -->
+    <section>
+      <div class="card profile-card">
+        <div class="profile-avatar">
+          <div class="profile-avatar-inner">SC</div>
+        </div>
+        <div class="profile-name">Satyam Chauhan</div>
+        <div class="profile-title">CS Student · LinkUp member</div>
+
+        <div class="profile-meta">
+          <div class="profile-meta-row">
+            <span class="profile-meta-label">Unread notifications</span>
+            <span class="profile-meta-value">3</span>
+          </div>
+          <div class="profile-meta-row">
+            <span class="profile-meta-label">All notifications</span>
+            <span class="profile-meta-value">24</span>
+          </div>
+        </div>
+
+        <button class="profile-link">
+          <span class="profile-link-dot"></span>
+          Mark all as read
+        </button>
+      </div>
+
+      <div class="card shortcuts-card">
+        <h3>Quick filters</h3>
+        <div>
+          <div class="shortcut-pill">
+            <span class="shortcut-dot"></span>
+            All
+          </div>
+          <div class="shortcut-pill">
+            <span class="shortcut-dot"></span>
+            Mentions
+          </div>
+          <div class="shortcut-pill">
+            <span class="shortcut-dot"></span>
+            Reactions
+          </div>
+          <div class="shortcut-pill">
+            <span class="shortcut-dot"></span>
+            Job alerts
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Middle Column: Notifications list -->
+    <section>
+      <article class="card">
+        <div class="notif-header">
+          <div class="feed-heading" style="margin:0;">
+            <span class="feed-dot"></span>
+            <span>Notifications</span>
+          </div>
+          <div class="notif-tabs">
+            <span class="notif-tab notif-tab-active">All</span>
+            <span class="notif-tab">Unread</span>
+          </div>
+        </div>
+
+        <div class="notif-list">
+          <div class="notif-section-title">Today</div>
+
+          <!-- Unread 1 -->
+          <div class="notif-item notif-unread">
+            <div class="notif-avatar">AL</div>
+            <div class="notif-content-main">
+              <div class="notif-text-main">
+                Ananya Singh reacted to your post: <strong>"Completed 50 DSA questions this week 🔥"</strong>
+              </div>
+              <div class="notif-text-sub">“Keep going, this is inspiring!”</div>
+            </div>
+            <div class="notif-time-dot">
+              5m ago
+              <div class="notif-dot"></div>
+            </div>
+          </div>
+
+          <!-- Unread 2 -->
+          <div class="notif-item notif-unread">
+            <div class="notif-avatar">RV</div>
+            <div class="notif-content-main">
+              <div class="notif-text-main">
+                Rohan Verma sent you a message.
+              </div>
+              <div class="notif-text-sub">
+                “Can you help me with deployment after class?”
+              </div>
+            </div>
+            <div class="notif-time-dot">
+              25m ago
+              <div class="notif-dot"></div>
+            </div>
+          </div>
+
+          <!-- Unread 3 -->
+          <div class="notif-item notif-unread">
+            <div class="notif-avatar">LU</div>
+            <div class="notif-content-main">
+              <div class="notif-text-main">
+                New comment on your LinkUp announcement.
+              </div>
+              <div class="notif-text-sub">Someone replied: “This UI looks super clean!”</div>
+            </div>
+            <div class="notif-time-dot">
+              1h ago
+              <div class="notif-dot"></div>
+            </div>
+          </div>
+
+          <div class="notif-section-title">Earlier</div>
+
+          <div class="notif-item">
+            <div class="notif-avatar">J</div>
+            <div class="notif-content-main">
+              <div class="notif-text-main">
+                New job match: <strong>Frontend Intern (React)</strong> at PixelCraft.
+              </div>
+              <div class="notif-text-sub">
+                Based on your skills: React, JavaScript, HTML, CSS.
+              </div>
+            </div>
+            <div class="notif-time-dot">
+              1d ago
+            </div>
+          </div>
+
+          <div class="notif-item">
+            <div class="notif-avatar">G</div>
+            <div class="notif-content-main">
+              <div class="notif-text-main">
+                You were invited to join the group <strong>DSA Practice Club</strong>.
+              </div>
+              <div class="notif-text-sub">
+                Solve daily problems with other students.
+              </div>
+            </div>
+            <div class="notif-time-dot">
+              2d ago
+            </div>
+          </div>
+
+          <div class="notif-item">
+            <div class="notif-avatar">PS</div>
+            <div class="notif-content-main">
+              <div class="notif-text-main">
+                Priya Sharma viewed your profile.
+              </div>
+              <div class="notif-text-sub">
+                Frontend · React | UI.
+              </div>
+            </div>
+            <div class="notif-time-dot">
+              3d ago
+            </div>
+          </div>
+        </div>
+      </article>
+    </section>
+
+    <!-- Right Column: Notification settings / tips -->
+    <aside>
+      <div class="card">
+        <h3 style="font-size:13px; margin-bottom:8px;">Notification settings</h3>
+        <div class="notif-settings-list">
+          <label>
+            <input type="checkbox" checked />
+            Email me job alerts
+          </label>
+          <label>
+            <input type="checkbox" checked />
+            Notify on new messages
+          </label>
+          <label>
+            <input type="checkbox" checked />
+            Notify on reactions to my posts
+          </label>
+          <label>
+            <input type="checkbox" />
+            Notify when someone views my profile
+          </label>
+        </div>
+      </div>
+
+      <div class="card" style="margin-top:12px;">
+        <h3 style="font-size:13px; margin-bottom:8px;">Tips</h3>
+        <p style="font-size:12px; color:var(--text-muted); line-height:1.5;">
+          Use notifications to track:
+          <br>- New job matches  
+          <br>- Messages from recruiters  
+          <br>- Reactions & comments on your posts  
+          <br><br>
+          You can change these preferences anytime.
+        </p>
+      </div>
+    </aside>
+  </main>
+</body>
+</html>
